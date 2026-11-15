@@ -7,7 +7,7 @@ TOKEN = "9240279789:AAHkXqMOnumNt2Tjp--g7zbovQ9AfcQ29DYZ"
 logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token=TOKEN)
-dp = Dispatcher(bot)
+dp = Dispatcher()
 
 @dp.message_handler(commands=['start'])
 async def start_command(message: types.Message):
